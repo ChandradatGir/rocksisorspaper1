@@ -4,7 +4,7 @@ import PlayerCard from './PlayerCard.js'
 class Game extends Component {
   constructor (){
     super();
-    this.signs = ['rock', 'sissors', 'rock']
+    this.signs = ['rock', 'sissors', 'paper']
     this.state = {
       playerOne: 'rock',
       playerTwo: 'sissors',
@@ -21,7 +21,7 @@ class Game extends Component {
 
   decideWinner = () => {
     const playerOne = this.state.playerOne;
-    const playerTwo = this.state.playerOne;
+    const playerTwo = this.state.playerTwo;
 
     if(playerOne === playerTwo){
       return "It's a Tie!"
